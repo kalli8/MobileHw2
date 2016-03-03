@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kallimartin.mobilehw2_2.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <fragment
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/controlFrag"
+            class="com.example.kallimartin.mobilehw2_2.ControlFragment"
+            tools:layout="@layout/fragment_control"
+            ></fragment>
+        <fragment
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:id="@+id/listFrag"
+            class="com.example.kallimartin.mobilehw2_2.LapFragment"
+            tools:layout="@layout/fragment_lap"
+            ></fragment>
+    </LinearLayout>
+
+</FrameLayout>
